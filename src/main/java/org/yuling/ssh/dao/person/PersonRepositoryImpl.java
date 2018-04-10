@@ -15,7 +15,7 @@ public class PersonRepositoryImpl implements PersonRepository {
     private SessionFactory sessionFactory;
 	
 	 public Session getCurrentSession() {
-        return this.sessionFactory.openSession();
+        return this.sessionFactory.getCurrentSession();
     }
 	
 	public Person load(Long id) {
